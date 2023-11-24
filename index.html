@@ -1,0 +1,689 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tenbitz</title>
+    <meta name="author" content="Tenbitz">
+    <meta name="description" content="tenbitz">
+    <meta name="keywords" content="">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Jost:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--==============================
+	    All CSS File
+	============================== -->
+	
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+.th-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #005D93;
+    color: var(--white-color);
+    font-family: var(--title-font);
+    box-shadow: 0px 6px 16px rgba(13, 94, 244, 0.24);
+	background-color: #005D93;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size:16px;
+	font-weight:400;
+    border-radius: 5px;
+}
+.header-btns a:not(.vs-btn), .header-btns button:not(.vs-btn) {
+    background-color: #005D93;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size:16px;
+	font-weight:400;
+	}
+.ml-25 {
+    margin-left: 25px;
+}
+.th-btn:hover::before, .th-btn.active::before {
+    height: 560%;
+}
+.th-btn:before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 600%;
+    background-color: var(--title-color);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    z-index: -1;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.th-btn:hover, .th-btn.active {
+    color: var(--white-color);
+}
+.header {
+  
+  background: #555;
+  color: #f1f1f1;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.vs-logo.style2::before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: -0.5px;
+    bottom: -11px;
+	}
+</style>
+</head>
+
+
+<body>
+
+
+
+
+    <!--******************************** Code Start From Here ******************************** -->
+
+    <!--==============================Mobile Menu ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/TENBITZ Logo.svg" alt="Educino"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--============================== Header Area  ==============================-->
+    <header class="vs-header header-layout2" > 
+	
+        <div class="header-top" style="background-color:#004A99">
+            <div class="container" >
+                <div class="row justify-content-between align-items-center gx-50">
+                    <div class="col d-none d-xl-block" style="padding:20px;">
+                        <div class="header-links style2">
+                            <ul>
+                                <li><i class="fas fa-phone-alt" style="color:white"></i>Phone: <a href="#">+44 7466308334</a></li>
+                                <li><i class="fas fa-envelope" style="color:white"></i>Email: <a href="#">info@tenbitz.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <!-- <a class="user-login style2" href="login-register.html"><i class="fas fa-user-circle"></i> Login & Register</a> -->
+                    </div>
+                    <div class="col-auto">
+                        <div class="header-social style2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header" id="myHeader" >
+            <div class="sticky-actve"style="background-color:#2F2552;padding:0px">
+                <div class="container position-relative z-index-common">
+                    <div class="row gx-100 align-items-center justify-content-between" >
+                       
+						<div class="col-sm-4" style="width:%">
+                            <div class="vs-logo style2" style="margin-top:-10px">
+                                <a href="index.html"><img class="logo" src="assets/img/TENBITZ Logo.svg" alt="logo"></a>
+                            </div>
+                        </div>
+						
+                        <div class="col-sm-6" >
+                            <nav class="main-menu menu-style3 d-none d-lg-block">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                   
+                                    <li> <a href="#">About Us</a> </li>
+                                    
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+                        </div>
+                        <div class="col-sm-2 d-none d-xl-block">
+                            <div class="header-btn">
+                                <!-- <button type="button" class="searchBoxTggler"><i class="far fa-search"></i></button> -->
+                                <a href="#" class="th-btn ml-25 ">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!--============================== Hero section  ==============================-->
+    <!--<section>
+        <div class="vs-carousel hero-layout1 style2" data-fade="true" data-dots="true">
+                <div class="hero-inner">
+                    <div class="hero-bg" data-bg-src="assets/img/slider-1.jpg"></div>
+					
+                    <div class="container">
+                        <div class="hero-content">
+                        </div>
+                    </div>
+                </div>
+	    </div>
+    </section>-->
+	<img src="assets/img/slider-1.jpg">
+    <!--============================== About us==============================-->
+    <!--<section class="space-top space-bottom">
+        <div class="container">
+            <div class="row align-items-center align-items-xxl-start">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="picture-box2">
+                        <div class="picture-1 mega-hover"><img src="assets/img/about/about-2-1.jpg" alt="About Img"></div>
+                        <div class="picture-2 mega-hover"><img src="assets/img/about/about-2-2.jpg" alt="About Img"></div>
+                        <div class="picture-3 mega-hover"><img src="assets/img/about/about-2-3.jpg" alt="About Img"></div>
+                        <div class="vs-circle"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="about-box2">
+                        <div class="title-area">
+                            <span class="sec-subtitle">WELCOME TO TENBITZ</span>
+                            <h2 class="about-title h1">Take Your Learning Organization to The Next Level.</h2>
+                        </div>
+                        <div class="about-content">
+                            <p class="fs-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A esse consequuntur asperiores libero. Repellendus sint, consequuntur commodi enim repellat rerum asperiores sed amet dignissimos sapiente, saepe labore quasi, aperiam eum?</p>
+
+                            <div class="call-media">
+                                <div class="media-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="media-body">
+                                    <span class="media-label">Call Us</span>
+                                    <p class="media-info"><a href="#" class="text-inherit">+44 7466308334</a></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="vs-btn style3 mt-2"><i class="far fa-angle-right"></i>Get More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!---new about section-->
+    <section class="space-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9">
+                    <div class="title-area mb-3 mb-xl-5">
+                        <span class="sec-subtitle">Welcome to Tenbitz</span>
+                        <h2 class="sec-title">About Tenbitz</h2>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-12 mb-30 mb-xl-0">
+                    <p class="fs-md mt-n1"style="text-align:center">Tenbitz Technologies Ltd. is a fast growing start up with the emerging technologies <br>like Automation, 3D Printing, Artificial Intelligence and Manufacturing</p>
+                   <!-- <div class="media-style1">
+                      <div class="media-img"><img src="assets/img/about/author-1-1.png" alt="About Author"></div>
+                        <div class="media-body">
+                            <span class="media-label">Ram</span>
+                            <p class="media-info">President, Director</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 text-center text-xl-start">
+                    <div class="title-area">
+                        <span class="sec-subtitle"></span>
+                        <h2 class="sec-title h1">Services</h2>
+                    </div>
+                    <div class="row gx-80 gy-xl-4 mb-4 mb-xl-0">
+					<div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-2.svg" alt=""></div>
+                                <h5 class="media-title">3D Modelling</h5>
+                                <p>3D Modelling for Engineering components, Medical and building Prototypes using Autodesk Software</p>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-2.svg" alt=""></div>
+                                <h5 class="media-title">Firmware & Embedded Systems</h5>
+                                <p>Embedded C/C++ Development for various microcontrollers for control systems, Automation, Aquabotics and Agribotics</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-3.svg" alt=""></div>
+                                <h5 class="media-title">Education</h5>
+                                <p>Spread the message and inculcate the importance of the STEM subjects to young children. Programme aligned with the local educational system and needs</p>
+                            </div>
+                        </div>
+						<div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-1.svg" alt=""></div>
+                                <h5 class="media-title">3D Printing</h5>
+                                <p>3D Print the Models with the state of the printers</p>
+                            </div>
+                        </div>
+						<div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-2.svg" alt=""></div>
+                                <h5 class="media-title">Training</h5>
+                                <p>Resource training in the high in demand niche skillsets Embedded Systems development, Circuitory, PLC etc</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="media-style4">
+                                <div class="media-icon"><img src="assets/img/icon/training-icon-1-4.svg" alt=""></div>
+                                <h5 class="media-title">Manufacturing</h5>
+                                <p>Manufacture custom parts like Brackets etc using CNC machines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section><!--============================== Work Process Area ==============================-->
+    <!--<section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center">
+                <div class="sec-icon">
+                    <div class="vs-circle"></div>
+                </div>
+                <span class="sec-subtitle">FIND THE BEST TEACHER FOR YOU</span>
+                <h2 class="sec-title h1">How it works</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg process-inner1 order-2 order-lg-1">
+                    <div class="process-style1">
+                        <span class="process-number">1</span>
+                        <div class="process-content">
+                            <h3 class="process-title">Find your perfect online tutor</h3>
+                            <p class="process-text">Will reply to your request in hours and arrange free minute</p>
+                        </div>
+                    </div>
+                    <div class="process-style1">
+                        <span class="process-number">2</span>
+                        <div class="process-content">
+                            <h3 class="process-title">Meet your tutor to discuss your cours</h3>
+                            <p class="process-text">During trial consultation you have chance to meet teachers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 mb-30 mb-md-5 mb-lg-0">
+                    <div class="img-box1 style2">
+                        <div class="vs-circle">
+                            <div class="mega-hover">
+                                <img src="assets/img/about/about-2-1.png" alt="banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg process-inner2 order-3">
+                    <div class="process-style1">
+                        <span class="process-number">3</span>
+                        <div class="process-content">
+                            <h3 class="process-title">Pay for your course charges</h3>
+                            <p class="process-text">Pay for your first study using our secure payment</p>
+                        </div>
+                    </div>
+                    <div class="process-style1">
+                        <span class="process-number">4</span>
+                        <div class="process-content">
+                            <h3 class="process-title">Start your course lessons</h3>
+                            <p class="process-text">be ready to start your lessons the very same day!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+	<!--==============================
+  FAQ Area
+==============================-->
+   <!-- <section class=" space-top space-extra-bottom">
+        <div class="container">
+            <div class="row gx-50">
+                <div class="col-lg-7 col-xl-8 mb-40 mb-lg-0">
+                    <div class="title-area wow fadeInUp text-center text-lg-start" data-wow-delay="0.1s">
+                        <span class="sec-subtitle">FREQUENTLY ASKED QUESTIONS</span>
+                        <h2 class="sec-title h1">Academic Faq's</h2>
+                    </div>
+                    <div class="accordion-style1 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="accordion" id="faqVersion1">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What kind of robotic course are offered here?</button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqVersion1">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta vero doloremque facere harum molestias dolor impedit sunt veritatis quasi?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What kind of robotic course are offered here?</button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqVersion1">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quidem maxime consequatur perspiciatis totam enim laborum consequuntur magni rerum ipsum hic expedita neque sequi velit ad, veritatis debitis quam illum!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item active">
+                                <div class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What kind of robotic course are offered here?</button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#faqVersion1">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio nulla adipisci ipsum. Sunt, eos possimus molestiae amet nesciunt accusamus?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">What kind of robotic course are offered here?</button>
+                                </div>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqVersion1">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolor architecto id quaerat dolores nulla veniam sequi, voluptate culpa consequuntur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">What kind of robotic course are offered here?</button>
+                                </div>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqVersion1">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur quia assumenda inventore enim, aspernatur accusamus vitae accusantium! Nihil, accusamus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<span class="support-link">Have more questions? Check our <a href="contact.html">Help center</a> or contact our <a href="contact.html">support team</a></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-12">
+                            <div class="img-box5 mega-hover wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="img-1"><img class="w-100" src="assets/img/about/about-2-4.jpg" alt="About Img"></div>
+                                <div class="box-content">
+                                    <h3 class="img-title">Tenbitz's Course Info</h3>
+                                    <p class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil.</p>
+                                    <a href="#" class="vs-btn">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-12">
+                        <div class="media-style5 wow fadeInUp" data-wow-delay="0.4s">
+                                <span class="icon"><i class="fas fa-user-headset"></i></span>
+                                <h5 class="media-title">Admission Process</h5>
+                                <a class="phone" href=""><i class="fal fa-phone-alt"></i></a>
+                                <a class="mail" href="m"><i class="fal fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>-->
+	<!--==============================
+      Brand Area
+  ==============================-->
+    <!--<section class="space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center wow fadeInUp" data-wow-delay="0.3s">
+                <div class="sec-icon">
+                    <div class="vs-circle"></div>
+                </div>
+                <span class="sec-subtitle">PLEASURES HAVE TO REPUDIATED </span>
+                <h2 class="sec-title h1">Top Companies</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-1.png" alt="brand"></div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-2.png" alt="brand"></div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-3.png" alt="brand"></div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-4.png" alt="brand"></div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-5.png" alt="brand"></div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="brand-style1"><img src="assets/img/brand/brand-1-6.png" alt="brand"></div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="rounded-20 overflow-hidden mega-hover"><img class="w-100" src="assets/img/brand/about-2-1.jpg" alt="brand"></div>
+                </div>
+            </div>
+        </div>
+    </section>--><!--==============================
+    Footer Area
+  ==============================-->
+    <footer class="footer-wrapper footer-layout2" style="background-color:#004A99">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="widget footer-widget">
+                            <div class="vs-widget-about">
+                                <div class="footer-logo"> <a href="#"><img src="assets/img/TENBITZ Logo.svg" alt="logo"></a> </div>
+                                <p class="footer-text"></p>
+                                <!--<div class="footer-media">
+                                    <div class="media-icon"><i class="fas fa-file-pdf"></i></div>
+                                    <div class="media-body">
+                                        <span class="media-title">Universty Prospects</span>
+                                        <a href="#">Download.pdf</a>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6 col-xl-3">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Find Campus</h3>
+                            <div class="footer-campus">
+                                <div class="campus-img mega-hover">
+                                    <a href="#"><img class="w-100" src="assets/img/about/about-2-5.jpg" alt="Campus Image"></a>
+                                </div>
+                                <p class="campus-address"><i class="far fa-map-marker"></i>1309 Beacon Street, Suite 300, Brookline, MA, 02446</p>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="widget nav_menu footer-widget">
+                            <h3 class="widget_title">Navigation</h3>
+                            <div class="menu-all-pages-container footer-menu">
+                                <ul class="menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About us</a></li>
+                                  
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                       <!-- <div class="widget footer-widget">
+                            <div class="contact-style1">
+                                <!--<h4 class="contact-title">Looking For Learn Something ?</h4>
+                                <p class="contact-text">Why Wait Start It Now..!</p>
+                                <a href="tel:+447466308334" class="contact-number h5"><i class="far fa-phone-alt"></i>+44 7466308334</a>
+                                <a href="tel:+44 7466308334" class="contact-number h5"><i class="far fa-phone-alt"></i>+44 7466308334</a>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap" style="background-color:#00428A">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="text-center col-lg-auto">
+                        <p class="copyright-text">2023 <i class="fal fa-copyright"></i>  <a href="#">TENBITZ</a></p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="social-style1">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--******************************** Code End  Here ******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/app.min.js"></script> -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Wow.js Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <!-- Tweenmax JS -->
+    <script src="assets/js/tweenmax.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/nice-select.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+
+</html>
