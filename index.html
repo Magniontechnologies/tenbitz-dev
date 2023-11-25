@@ -20,10 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Jost:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <!--==============================
 	    All CSS File
 	============================== -->
+	
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
@@ -37,7 +38,68 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 <style>
-
+.th-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #005D93;
+    color: var(--white-color);
+    font-family: var(--title-font);
+    box-shadow: 0px 6px 16px rgba(13, 94, 244, 0.24);
+	background-color: #005D93;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size:16px;
+	font-weight:400;
+    border-radius: 5px;
+}
+.header-btns a:not(.vs-btn), .header-btns button:not(.vs-btn) {
+    background-color: #005D93;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size:16px;
+	font-weight:400;
+	}
+.ml-25 {
+    margin-left: 25px;
+}
+.th-btn:hover::before, .th-btn.active::before {
+    height: 560%;
+}
+.th-btn:before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 600%;
+    background-color: var(--title-color);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    z-index: -1;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.th-btn:hover, .th-btn.active {
+    color: var(--white-color);
+}
 .header {
   
   background: #555;
@@ -87,9 +149,7 @@
                     <li>
                         <a href="#">About Us</a>
                     </li>
-                    <li>
-                        <a href="#">Courses</a>
-                    </li>
+                   
                     <li>
                         <a href="#">Services</a>
                     </li>
@@ -113,14 +173,14 @@
     <!--============================== Header Area  ==============================-->
     <header class="vs-header header-layout2" > 
 	
-        <div class="header-top" >
+        <div class="header-top" style="background-color:#004A99">
             <div class="container" >
                 <div class="row justify-content-between align-items-center gx-50">
                     <div class="col d-none d-xl-block" style="padding:20px;">
                         <div class="header-links style2">
                             <ul>
-                                <li><i class="fas fa-phone-alt"></i>Phone: <a href="#">+44 7466308334</a></li>
-                                <li><i class="fas fa-envelope"></i>Email: <a href="#">info@tenbitz.com</a></li>
+                                <li><i class="fas fa-phone-alt" style="color:white"></i>Phone: <a href="#">+44 7466308334</a></li>
+                                <li><i class="fas fa-envelope" style="color:white"></i>Email: <a href="#">info@tenbitz.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -135,16 +195,18 @@
                 </div>
             </div>
         </div>
-        <div class="header" id="myHeader" >
+        <div class="sticky-wrapper header" id="myHeader" >
             <div class="sticky-actve"style="background-color:#2F2552;padding:0px">
                 <div class="container position-relative z-index-common">
-                    <div class="row gx-100 align-items-center justify-content-between" >
-                        <div class="col-sm-4 col-xl align-self-stretch" >
-                            <div class="vs-logo style2" style="margin-bottom:-20px">
-                                <a  href="index.html"><img class="logo" src="assets/img/TENBITZ Logo.svg" alt="logo"></a>
+                    <div class="row gx-50 align-items-center justify-content-between" >
+                       
+						<div class="col-auto col-xl align-self-stretch" style="width:40%">
+                            <div class="vs-logo style2" style="margin-top:0px">
+                                <a href="index.html"><img class="logo" src="assets/img/TENBITZ Logo.svg" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6" >
+						
+                        <div class="col-auto" style="padding-right:100px;width:40%">
                             <nav class="main-menu menu-style3 d-none d-lg-block">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
@@ -159,17 +221,18 @@
                             </nav>
                             <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
                         </div>
-                        <div class="col-sm-2 d-none d-xl-block">
-                            <div class="header-btns style2">
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="header-btn">
                                 <!-- <button type="button" class="searchBoxTggler"><i class="far fa-search"></i></button> -->
-                                <a href="#" class="vs-btn style6">Register Now</a>
+                                <a href="#" class="th-btn ml-25 ">Register Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header><!--============================== Hero section  ==============================-->
+    </header>
+	<!--============================== Hero section  ==============================-->
     <!--<section>
         <div class="vs-carousel hero-layout1 style2" data-fade="true" data-dots="true">
                 <div class="hero-inner">
@@ -182,7 +245,7 @@
                 </div>
 	    </div>
     </section>-->
-	<img src="assets/img/slider-1.jpg">
+	<img src="assets/img/slider-1.jpg" style="padding-top:">
     <!--============================== About us==============================-->
     <!--<section class="space-top space-bottom">
         <div class="container">
@@ -226,11 +289,11 @@
                 <div class="col-xl-9">
                     <div class="title-area mb-3 mb-xl-5">
                         <span class="sec-subtitle">Welcome to Tenbitz</span>
-                        <h2 class="sec-title">Making STEM Education More Accessible and Fun!</h2>
+                        <h2 class="sec-title">About Tenbitz</h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4 mb-30 mb-xl-0">
-                    <p class="fs-md mt-n1">Tenbitz Technologies Ltd. is a fast growing start up with the emerging technologies like Automation, 3D Printing, Artificial Intelligence and Manufacturing</p>
+                <div class="col-md-12 col-xl-12 mb-30 mb-xl-0">
+                    <p class="fs-md mt-n1"style="text-align:justify">Tenbitz Technologies Ltd. is a fast growing start up with the emerging technologies like Automation, 3D Printing, Artificial Intelligence and ManufacturingTenbitz Technologies Ltd. is a fast growing start up with the emerging technologies like Automation, 3D Printing, Artificial Intelligence and ManufacturingTenbitz Technologies Ltd. is a fast growing start up with the emerging technologies like Automation, 3D Printing, Artificial Intelligence and Manufacturing</p>
                    <!-- <div class="media-style1">
                       <div class="media-img"><img src="assets/img/about/author-1-1.png" alt="About Author"></div>
                         <div class="media-body">
@@ -238,23 +301,6 @@
                             <p class="media-info">President, Director</p>
                         </div>
                     </div> -->
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="list-style1 vs-list ">
-                        <ul>
-                            <li>Steady stream of new students</li>
-                            <li>Smart calendar</li>
-                            <li>Interactive classroom</li>
-                            <li>Convenient payment methods</li>
-                            <li>Professional development webinars</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 mt-n5 pt-5 pt-xl-0">
-                     <!-- <div class="img-box3">
-                        <div class="img-1 mega-hover"><img class="w-100" src="assets/img/about/about-s-1.png" alt="About Img"></div>
-                        <div class="shape-dotted jump"></div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -595,6 +641,31 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Magnific Popup -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <!-- Tweenmax JS -->
+    <script src="assets/js/tweenmax.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/nice-select.min.js"></script>
+
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
