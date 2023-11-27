@@ -215,6 +215,9 @@ span.ajax-loader:empty,
 p:empty {
   display: none;
 }
+#naver{
+  background-color: green;
+}
 
 p {
   margin: 0 0 18px 0;
@@ -316,7 +319,10 @@ h6 {
 /* Small devices */
 @media (max-width: 767px) {
   .logo{
-    width: 90%;
+    width: 70%;
+  }
+  .vs-logo.style2::before{
+    background-color: #28a745;
   }
   .h1,
   h1 {
